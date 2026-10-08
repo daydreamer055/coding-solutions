@@ -39,18 +39,21 @@ Output: 1
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-08T16:49:45.776Z  
+**Submitted:** 2026-10-08T16:52:13.062Z  
 
 ```java
 class Solution {
-    public int pair(int n){
+    public int pair(int n,int[]dp){
         if(n<=2)  return n;
-        return pair(n-1) + (n-1)*pair(n-2);
+        if(dp[n]!= -1) return dp[n];
+        return dp[n]= pair(n-1,dp) + (n-1)*pair(n-2,dp);
         
     }
     public int countFriendsPairings(int n) {
         // code here
-        return pair(n);
+        int[] dp = new int[n+1];
+        Arrays.fill(dp,-1);
+        return pair(n,dp);
     }
 }
 
