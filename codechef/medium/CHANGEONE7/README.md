@@ -53,7 +53,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T14:47:53.991Z  
+**Submitted:** 2026-10-14T14:50:32.029Z  
 
 ```java
 import java.util.*;
@@ -73,7 +73,13 @@ class Codechef
 		    for(int i=0;i<n;i++){
 		        arr[i] = sc.nextInt();
 		    }
-		    
+		    if(n<=2){
+		        System.out.println(0);
+		        continue;
+		    }
+		    Arrays.sort(arr);
+		    int ans =Math.min(arr[n-1]-arr[1],arr[n-2]-arr[0]);
+		    System.out.println(ans);
 		    
 		}
 
