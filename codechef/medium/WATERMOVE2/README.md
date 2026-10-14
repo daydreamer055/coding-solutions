@@ -58,7 +58,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T15:01:49.099Z  
+**Submitted:** 2026-10-14T15:02:30.427Z  
 
 ```java
 
@@ -82,9 +82,10 @@ class Codechef {
 
             Arrays.sort(arr);
 
-            long ans = 0;
+            int ans = 0;
+            int count = Math.min(n, k + 1);
 
-            for (int i = 0; i < Math.min(k, n); i++) {
+            for (int i = n - 1; i >= n - count; i--) {
                 ans += arr[i];
             }
 
