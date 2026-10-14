@@ -5,10 +5,11 @@ class Solution {
         if(n==1) return true;
         int next = 0;
         for(int i=0;i<n;i++){
-         next = i+nums[i];
-        if(nums[i]==0 && i!= n-1) return false;
+         if(i>next) return false;
+         next = Math.max(next,i+nums[i]);
+         if(next>= n-1) return true;
 
         }
-        return true;
+        return false;
     }
 }
