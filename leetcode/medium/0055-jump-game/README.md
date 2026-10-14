@@ -38,9 +38,9 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum jump 
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.1 MB  
-**Submitted:** 2026-10-14T15:20:46.179Z  
+**Runtime:** 2 ms (beats 89.84%)  
+**Memory:** 47.4 MB (beats 98.28%)  
+**Submitted:** 2026-10-14T15:26:13.030Z  
 
 ```java
 class Solution {
@@ -50,11 +50,12 @@ class Solution {
         if(n==1) return true;
         int next = 0;
         for(int i=0;i<n;i++){
-         next = i+nums[i];
-        if(nums[i]==0 && i!= n-1) return false;
+         if(i>next) return false;
+         next = Math.max(next,i+nums[i]);
+         if(next>= n-1) return true;
 
         }
-        return true;
+        return false;
     }
 }
 ```
