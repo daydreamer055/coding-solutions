@@ -56,8 +56,8 @@ Therefore, you can't travel around the circuit once no matter where you start.
 
 **Language:** Java  
 **Runtime:** 2 ms (beats 99.22%)  
-**Memory:** 118.8 MB (beats 95.54%)  
-**Submitted:** 2026-10-22T16:39:34.780Z  
+**Memory:** 119.3 MB (beats 76.96%)  
+**Submitted:** 2026-10-22T16:40:12.281Z  
 
 ```java
 class Solution {
