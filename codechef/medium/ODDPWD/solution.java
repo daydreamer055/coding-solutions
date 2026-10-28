@@ -13,7 +13,7 @@ class Codechef
     
     for(int i=0;i<5;i+=2){
         
-            System.out.println(s.charAt(i));
+            System.out.print(s.charAt(i));
         
     }
 	}
