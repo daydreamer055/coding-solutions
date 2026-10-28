@@ -78,7 +78,7 @@ The password is `WEC`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T14:37:43.946Z  
+**Submitted:** 2026-10-28T14:39:35.994Z  
 
 ```java
 import java.util.*;
@@ -96,7 +96,7 @@ class Codechef
     
     for(int i=0;i<5;i+=2){
         
-            System.out.println(s.charAt(i));
+            System.out.print(s.charAt(i));
         
     }
 	}
