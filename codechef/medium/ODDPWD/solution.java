@@ -10,7 +10,7 @@ class Codechef
 		
     Scanner sc = new Scanner(System.in);
     String s = sc.next();
-    int n = sc.nextInt();
+    
     for(int i=0;i<5;i++){
         if(i%2==0){
             System.out.println(s.charAt(i));
