@@ -11,7 +11,7 @@ _Description not available._
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-31T17:12:51.684Z  
+**Submitted:** 2026-10-31T17:13:17.166Z  
 
 ```java
 class Solution {
